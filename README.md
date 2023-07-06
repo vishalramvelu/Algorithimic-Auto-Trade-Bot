@@ -2,7 +2,7 @@
 
 The Algorithmic Auto Trade Bot is designed to analyze stock market data and sentiment analysis of financial news to generate trading signals. It uses historical price data from the Yahoo Finance API and performs technical analysis to identify potential buy and sell opportunities. The bot also incorporates sentiment analysis on financial news articles to gauge market sentiment and adjust trading decisions accordingly. Overall, this is an automated trading algorithim integrating sentimentality analysis from financial news, technical metrics, and risk-mitigating strategies. 
 
-#Features 
+## Features 
 
 The Algorithmic Auto Trade Bot utilizes the following features:
 
@@ -17,7 +17,7 @@ The Algorithmic Auto Trade Bot utilizes the following features:
 * Risk Management (Position Sizing): The bot employs a risk management strategy to determine the appropriate position size based on risk       percentage. Given a certain capital, we allocate a certain percentage to invest per trade. This helps limit potential losses and manage      overall portfolio risk.
 
 
-#Future Implementations
+## Future Implementations
 
 The Algorithmic Auto Trade Bot has the following potential future features:
 
@@ -25,7 +25,7 @@ The Algorithmic Auto Trade Bot has the following potential future features:
 * Machine learning algorithms: Utilizing machine learning algorithms could enhance the bot's ability to learn from historical data and adapt    to changing market conditions. In addition to manual technical/sentimental analysis, an ML appraoch could aid the model.
 * Portfolio management: Adding portfolio management features, such as tracking multiple stocks and optimizing portfolio allocations, can       further enhance the bot's capabilities.
 
-#Installation
+## Installation
 
 To get started with the Algorithmic Auto Trade Bot, follow these steps:
 
@@ -37,11 +37,11 @@ To get started with the Algorithmic Auto Trade Bot, follow these steps:
 4. Run the script to perform the stock market analysis and generate trading signals
 5. Review the output, including price charts, technical indicators, and trading signals.
 
-#Credits 
+## Credits 
 
 This project was developed by Vishal Ramvelu. Contributions are welcome via pull requests. For any questions or suggestions, please contact rv.vishal@gmail.com.
 
-#License 
+## License 
 
 This project is licensed under the MIT License.
   
