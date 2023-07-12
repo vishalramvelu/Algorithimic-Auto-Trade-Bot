@@ -1,6 +1,6 @@
 # Algorithimic-Auto-Trade-Bot
 
-The Algorithmic Auto Trade Bot is designed to analyze stock market data and sentiment analysis of financial news to generate trading signals. It uses historical price data from the Yahoo Finance API and performs technical analysis to identify potential buy and sell opportunities. The bot also incorporates sentiment analysis on financial news articles to gauge market sentiment and adjust trading decisions accordingly. Overall, this is an automated trading algorithim integrating sentimentality analysis from financial news, technical metrics, and risk-mitigating strategies. 
+The Algorithmic Auto Trade Bot is a web application designed to analyze stock market data and sentiment analysis of financial news to generate trading signals. It uses historical price data from the Yahoo Finance API and performs technical analysis to identify potential buy and sell opportunities. The bot also incorporates sentiment analysis on financial news articles to gauge market sentiment and adjust trading decisions accordingly. Overall, this is an automated trading algorithim integrating sentimentality analysis from financial news, technical metrics, and risk-mitigating strategies. 
 
 ## Features 
 
@@ -34,8 +34,13 @@ To get started with the Algorithmic Auto Trade Bot, follow these steps:
 3. Customize the trading parameters:
    * Set the start_date and end_date variables to define the date range for the analysis
    * Modify the tickers list to include the desired stock tickers.
-4. Run the script to perform the stock market analysis and generate trading signals
-5. Review the output, including price charts, technical indicators, and trading signals.
+4. Run the Flask application to start the web server.
+5. Access the application in your web browser using the provided URL.
+6. Review the output, including price charts, technical indicators, and trading signals.
+
+## Usage 
+
+Once the Flask application is running, you can access the Algorithmic Auto Trade Bot through your web browser. The application provides a user interface where you can customize the trading parameters, view price charts, technical indicators, and trading signals for the selected stocks. From this information, you can selectively choose the relevant data and metrics for buying/selling to make informed decisions. 
 
 ## Credits 
 
