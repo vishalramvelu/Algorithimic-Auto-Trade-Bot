@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Stock Trading Algo Results</title>
+    <style>
+        table {
+            font-family: Arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        td, th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        .graph-img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 80%;
+            max-width: 800px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Stock Trading Algo Results</h1>
+
+    <h2>Overall Results</h2>
+    <table>
+        <tr>
+            <th>Ticker</th>
+            <th>Total Profit</th>
+            <th>Start Price</th>
+            <th>End Price</th>
+            <th>Profit/Loss</th>
+            <th>Total Return %</th>
+            <th>Hold Return</th>
+            <th>Hold Return %</th>
+        </tr>
+        {% for result in results %}
+            <tr>
+                <td>{{ result['ticker'] }}</td>
+                <td>{{ result['total_profit'] }}</td>
+                <td>{{ result['start_price'] }}</td>
+                <td>{{ result['end_price'] }}</td>
+                <td>{{ result['profit_loss'] }}</td>
+                <td>{{ result['total_return_percent'] }}</td>
+                <td>{{ result['hold_return'] }}</td>
+                <td>{{ result['hold_return_percent'] }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+
+    {% for ticker, data_frame, graph_path in combined_data %}
+        <h2>{{ ticker }}</h2>
+        <img src="{{ graph_path }}" alt="{{ ticker }} Graph" class="graph-img">
+        <table>
+            <tr>
+                <th>Date</th>
+                <th>Adj Close</th>
+                <th>RSI</th>
+                <th>Price Moving Avg</th>
+                <th>Vol Moving Avg</th>
+                <th>Price lower than MAVG</th>
+                <th>Volume higher than MAVG</th>
+                <th>MACD</th>
+                <th>MACD Signal</th>
+                <th>Lower Band</th>
+                <th>Upper Band</th>
+            </tr>
+            {% for index, row in data_frame.iterrows() %}
+                <tr>
+                    <td>{{ index }}</td>
+                    <td>{{ row['Adj Close'] }}</td>
+                    <td>{{ row['RSI'] }}</td>
+                    <td>{{ row['Price_Moving_Avg'] }}</td>
+                    <td>{{ row['Vol_Moving_Avg'] }}</td>
+                    <td>{{ row['Price lower than MAVG'] }}</td>
+                    <td>{{ row['Volume higher than MAVG'] }}</td>
+                    <td>{{ row['macd'] }}</td>
+                    <td>{{ row['macd_signal'] }}</td>
+                    <td>{{ row['Lower Band'] }}</td>
+                    <td>{{ row['Upper Band'] }}</td>
+                </tr>
+            {% endfor %}
+        </table>
+        <br>
+    {% endfor %}
+</body>
+</html>
+
