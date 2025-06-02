@@ -3,6 +3,8 @@
 This is an automated momentum trading algorithim integrating sentimentality analysis from financial news, technical metrics, and risk-mitigating strategies. It uses historical price data from the Yahoo Finance API and performs technical analysis to identify potential buy and sell opportunities. The bot also incorporates sentiment analysis on financial news articles to gauge market sentiment and adjust trading decisions accordingly.  
 
 ## Framework 
+* Backend: Python, Flask, Pandas, NLTK, Beautiful Soup, TA-lib,
+* Frontend: HTML/CSS
 
 ## Features 
 * Momentum Trading: Identifies stocks with upward momentum and potential for continued price increases
