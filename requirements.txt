@@ -1,0 +1,8 @@
+Flask
+pandas
+nltk
+beautifulsoup4
+TA-Lib
+matplotlib
+yfinance
+requests
