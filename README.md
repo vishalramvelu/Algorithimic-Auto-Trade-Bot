@@ -11,7 +11,7 @@ This is an automated momentum trading algorithim integrating sentimentality anal
 * Risk Management (Position Sizing): Determines the appropriate position size based on risk percentage managing profit/loss ratio
 
 ## Build
-To get started with the Algorithmic Auto Trade Bot, follow these steps:
+To use the Algorithmic Auto Trade Bot:
 
 1. Clone this repository: `git clone https://github.com/vishalramvelu/Algorithimic-Auto-Trade-Bot.git`
 2. Install the required dependencies: `pip install -r requirements.txt`
