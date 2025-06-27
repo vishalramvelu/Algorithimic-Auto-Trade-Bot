@@ -1,6 +1,6 @@
 # Algorithimic Auto Trade Bot
 
-This is an automated momentum trading algorithim integrating sentimentality analysis from financial news, technical metrics, and risk-mitigating strategies. It uses historical price data from the Robinhood API and performs technical analysis to identify potential buy and sell opportunities. The bot also incorporates sentiment analysis on financial news articles to gauge market sentiment and adjust trading decisions accordingly.  
+This is an automated momentum trading algorithim integrating sentimentality analysis from financial news, technical metrics, and risk-mitigating strategies. It uses historical price data from Robinhood API and performs technical analysis to identify potential buy and sell opportunities. The bot also incorporates sentiment analysis on financial news articles to gauge market sentiment and adjust trading decisions accordingly.  
 
 ## Framework 
 * Backend: Python, Flask, Pandas, NLTK, Beautiful Soup, TA-lib, Matplotlib
